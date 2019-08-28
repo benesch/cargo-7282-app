@@ -1,0 +1,14 @@
+[package]
+name = "app"
+version = "0.1.0"
+authors = ["Nikhil Benesch <nikhil.benesch@gmail.com>"]
+edition = "2018"
+publish = false
+
+[dependencies]
+base = { git = "https://github.com/benesch/cargo-7282-base.git" }
+intermediate = { git = "https://github.com/benesch/cargo-7282-intermediate.git" }
+
+[patch."https://github.com/benesch/cargo-7282-base"]
+# NOTICE: "beneschorg", not "benesch".
+base = { git = "https://github.com/beneschorg/cargo-7282-base" }
